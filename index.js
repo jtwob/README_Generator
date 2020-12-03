@@ -171,7 +171,7 @@ function init() {
             },
         ])
         .then(answers => {
-            writeToFile("./README.md", answers);
+            writeToFile("./sample_readme/README.md", answers);
         })
 }
 
