@@ -81,7 +81,8 @@ const badges = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    let text = `# ${data.title} ${badges[licenses.indexOf(data.license)]}
+    let text = `
+    # ${data.title} ${badges[licenses.indexOf(data.license)]}
     
     ## Description
     ${data.description}
@@ -113,8 +114,8 @@ function writeToFile(fileName, data) {
     
     ## Questions
     ${data.contact}
-    [Github](https://github.com/${data.github})
-    Email: ${data.email}`;
+    - [Github Profile: ](https://github.com/${data.github})
+    - Email: ${data.email}`;
 
     fs.writeFile(fileName, text, (err) => {
         if (err) throw err;
