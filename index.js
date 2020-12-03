@@ -15,6 +15,7 @@ const questions = [
     "A brief description of the best way to reach you with additional questions: "
 ];
 
+// array of licenses
 const licenses = [
     "Apache 2.0 License",
     "Boost Software License 1.0",
@@ -47,6 +48,7 @@ const licenses = [
     "The zlib/libpng License"
 ]
 
+// array of license badge links
 const badges = [
     "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
     "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)",
@@ -82,40 +84,39 @@ const badges = [
 // function to write README file
 function writeToFile(fileName, data) {
     let text = `
-    # ${data.title} ${badges[licenses.indexOf(data.license)]}
-    
-    ## Description
-    ${data.description}
+# ${data.title} ${badges[licenses.indexOf(data.license)]}
 
-    ## Table of Contents
-    =====================
-    1. [Description](#description)
-    2. [Installation](#installation)
-    3. [Usage](#usage)
-    4. [License](#license)
-    5. [Contributing](#contributing)
-    6. [Tests](#tests)
-    7. [Questions](#questions)
-    
-    ## Installation
-    ${data.install}
-    
-    ## Usage
-    ${data.usage}
-    
-    ## License
-    ${data.license}
-    
-    ## Contributing
-    ${data.contributors}
-    
-    ## Tests
-    ${data.testing}
-    
-    ## Questions
-    ${data.contact}
-    - [Github Profile: ](https://github.com/${data.github})
-    - Email: ${data.email}`;
+## Description
+${data.description}
+
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Tests](#tests)
+7. [Questions](#questions)
+
+## Installation
+${data.install}
+
+## Usage
+${data.usage}
+
+## License
+${data.license}
+
+## Contributing
+${data.contributors}
+
+## Tests
+${data.testing}
+
+## Questions
+${data.contact}
+- [Github Profile: ](https://github.com/${data.github})
+- Email: ${data.email}`;
 
     fs.writeFile(fileName, text, (err) => {
         if (err) throw err;

@@ -1,10 +1,10 @@
+
 # README Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-    
+
 ## Description
 This script recieves data on a project from the command-line and generates a uniform README with all of the data populated.
 
 ## Table of Contents
-=====================
 1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
@@ -17,7 +17,7 @@ This script recieves data on a project from the command-line and generates a uni
 npm
 
 ## Usage
-Simply run the index.js file with Node and answer the prompts as they come up. 
+Simply run the index.js file with Node and answer the prompts as they come up.
 
 ## License
 The MIT License
@@ -30,5 +30,7 @@ none
 
 ## Questions
 I am reachable at my email for further questions.
-- Github Profile: [Github](https://github.com/jtwob)
+- [Github Profile: ](https://github.com/jtwob)
 - Email: jtotah@usfca.edu
+
+[Live Demo](https://drive.google.com/file/d/1EIEpf4rlCI8h9Iy5REvd-0H3jyV9wPWk/view)
